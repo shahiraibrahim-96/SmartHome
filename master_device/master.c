@@ -254,14 +254,15 @@ int main(void){
 						/*display "Wrong password" sentence on the first row of the LCD */
 						LCD_displayStringRowColumn(0,0,"Wrong password");
 
+						/*display "tries left:" sentence on the second row of the LCD */
+						LCD_displayStringRowColumn(1,0,"tries left:");
+
+
 						/*make the cursor move to the second row column 11*/
 						LCD_goToRowColumn(1,11);
 
-						/*
 						LCD_intgerToString(ATTEMPTS_NUMBER - count_attempts);
 
-						/*display "tries left:" sentence on the second row of the LCD */
-						LCD_displayStringRowColumn(1,0,"tries left:");
 
 						/*halt the system for 500 ms*/
 						_delay_ms(500);
